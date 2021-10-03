@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 3rem auto;
+    max-width: 65rem;
+    width: 90%;
+    line-height: 1.3; 
+    text-align: justify;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.5);
+}
+
+@media screen and (max-width: 500px){
+    .header {
+        flex-direction: column;
+    }
+}
+
+.header__img {
+    width: 13rem;
+    margin-right: 4rem;
+}
+
+@media screen and (max-width: 500px){
+    .header__img {
+        width: 10rem;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text-header {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .text-header {
+        font-size: 1.6rem;
+    }
+}
+
+.text {
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .text {
+        font-size: 1.4rem;
+    }
+}
+
+.primary .image {
+    height: 18rem;
+}
+
+@media screen and (max-width: 500px){
+    .primary .image {
+        height: 15rem;
+        float: none;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }  
+}
+
+.primary__box {
+    margin: 4rem 0;
+}
+
+@media screen and (max-width: 500px){
+    .primary__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.primary-one__img {
+    float: left;
+    margin: 1.5rem 2rem 1.5rem 0;
+}
+
+.primary-two__img {
+    float: right;
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+}
+
+.footer__img {
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 500px){
+    .footer__img {
+        height: 13rem;
+        width: 13rem;
+        margin-right: 1rem;
+    }
+}
+
+.footer__text {
+    line-height: 3;
+}
+
+@media screen and (max-width: 500px){
+    .footer__text {
+        line-height: 1.6;
+    }
+}
